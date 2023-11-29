@@ -50,8 +50,12 @@ import diathrive.LoginPage;
 	        Thread.sleep(10000);
 	        // Perform assertions or actions after logout
 	        
-	        }
+	        
+	        
+	    }
 	    
+	   
+
 	    @AfterClass
 	    public void tearDown() {
 	        DriverManager.quitDriver();
