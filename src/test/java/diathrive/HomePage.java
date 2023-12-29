@@ -8,7 +8,7 @@ package diathrive;
 
 	public class HomePage {
 
-	    private WebDriver driver;
+	private WebDriver driver;
 
 	    
 	    
@@ -21,10 +21,6 @@ package diathrive;
 	        this.driver = driver;
 	        PageFactory.initElements(driver, this);
 	    }
-
-	    
-	    
-
 	    public  void logout() {
 	    	
 	    	clickSignout.click();

@@ -1,25 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-28T14:45:33 IST" name="Default suite" finished-at="2023-11-28T14:46:03 IST" duration-ms="29752">
+  <suite started-at="2023-12-14T20:35:54 IST" name="Mysuite" finished-at="2023-12-14T20:36:43 IST" duration-ms="49432">
     <groups>
     </groups>
-    <test started-at="2023-11-28T14:45:33 IST" name="Default test" finished-at="2023-11-28T14:46:03 IST" duration-ms="29752">
-      <class name="TestNG.ExampleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestNG.ExampleTest@3a6bb9bf]" started-at="2023-11-28T14:45:33 IST" name="setUp" finished-at="2023-11-28T14:45:41 IST" duration-ms="7937" status="PASS">
+    <test started-at="2023-12-14T20:35:54 IST" name="AllureTest" finished-at="2023-12-14T20:36:43 IST" duration-ms="49432">
+      <class name="TestNG.DiathriveSetup">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestNG.DiathriveSetup@79c97cb]" started-at="2023-12-14T20:35:54 IST" name="setup" finished-at="2023-12-14T20:36:03 IST" duration-ms="9849" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginAndLogout()[pri:0, instance:TestNG.ExampleTest@3a6bb9bf]" started-at="2023-11-28T14:45:41 IST" name="testLoginAndLogout" finished-at="2023-11-28T14:46:02 IST" duration-ms="21059" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="navigate_to_homepage_click_on_getstarted()[pri:1, instance:TestNG.DiathriveSetup@79c97cb]" started-at="2023-12-14T20:36:04 IST" name="navigate_to_homepage_click_on_getstarted" finished-at="2023-12-14T20:36:04 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAndLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.ExampleTest@3a6bb9bf]" started-at="2023-11-28T14:46:02 IST" name="tearDown" finished-at="2023-11-28T14:46:03 IST" duration-ms="680" status="PASS">
+        </test-method> <!-- navigate_to_homepage_click_on_getstarted -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestNG.DiathriveSetup@79c97cb]" started-at="2023-12-14T20:36:04 IST" name="tearDown" finished-at="2023-12-14T20:36:09 IST" duration-ms="4884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigate_to_homepage_click_on_getstarted status=SUCCESS method=DiathriveSetup.navigate_to_homepage_click_on_getstarted()[pri:1, instance:TestNG.DiathriveSetup@79c97cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestNG.ExampleTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method signature="enter_userDetails()[pri:2, instance:TestNG.DiathriveSetup@79c97cb]" started-at="2023-12-14T20:36:09 IST" name="enter_userDetails" finished-at="2023-12-14T20:36:17 IST" duration-ms="7710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_userDetails -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestNG.DiathriveSetup@79c97cb]" started-at="2023-12-14T20:36:17 IST" name="tearDown" finished-at="2023-12-14T20:36:22 IST" duration-ms="4990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=enter_userDetails status=SUCCESS method=DiathriveSetup.enter_userDetails()[pri:2, instance:TestNG.DiathriveSetup@79c97cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="checkManualInputfield()[pri:3, instance:TestNG.DiathriveSetup@79c97cb]" started-at="2023-12-14T20:36:22 IST" name="checkManualInputfield" finished-at="2023-12-14T20:36:39 IST" duration-ms="16811" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1xktl5x r-1867qdf r-13awgt0 r-1ow6zhx r-18u37iz r-1awozwy r-1777fci" data-testid="AddGlucoseLevel-Button-Save" style="margin-top: 0px; transition-duration: 0s;">...</div> is not clickable at point (1413, 649). Other element would receive the click: <span class="helpButtonLabel" id="helpButtonSpan" aria-live="polite" aria-atomic="true">...</span>
+  (Session info: chrome=120.0.6099.71)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7daf04f736ab235c37da22c8c09c21d, clickElement {id=E90C553847D118B14B3DF2B8EA4C7C51_element_138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55511/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e7daf04f736ab235c37da22c8c09c21d)] -> xpath: //div[@class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1xktl5x r-1867qdf r-13awgt0 r-1ow6zhx r-18u37iz r-1awozwy r-1777fci']]
+Session ID: e7daf04f736ab235c37da22c8c09c21d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div tabindex="0" class="css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1xktl5x r-1867qdf r-13awgt0 r-1ow6zhx r-18u37iz r-1awozwy r-1777fci" data-testid="AddGlucoseLevel-Button-Save" style="margin-top: 0px; transition-duration: 0s;">...</div> is not clickable at point (1413, 649). Other element would receive the click: <span class="helpButtonLabel" id="helpButtonSpan" aria-live="polite" aria-atomic="true">...</span>
+  (Session info: chrome=120.0.6099.71)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7daf04f736ab235c37da22c8c09c21d, clickElement {id=E90C553847D118B14B3DF2B8EA4C7C51_element_138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55511/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e7daf04f736ab235c37da22c8c09c21d)] -> xpath: //div[@class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1xktl5x r-1867qdf r-13awgt0 r-1ow6zhx r-18u37iz r-1awozwy r-1777fci']]
+Session ID: e7daf04f736ab235c37da22c8c09c21d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at diathrive.Homepagecheck.CheckManualInput(Homepagecheck.java:43)
+at TestNG.DiathriveSetup.checkManualInputfield(DiathriveSetup.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkManualInputfield -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestNG.DiathriveSetup@79c97cb]" started-at="2023-12-14T20:36:39 IST" name="tearDown" finished-at="2023-12-14T20:36:43 IST" duration-ms="4074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkManualInputfield status=FAILURE method=DiathriveSetup.checkManualInputfield()[pri:3, instance:TestNG.DiathriveSetup@79c97cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestNG.DiathriveSetup@79c97cb]" started-at="2023-12-14T20:36:43 IST" name="quit" finished-at="2023-12-14T20:36:43 IST" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- TestNG.DiathriveSetup -->
+    </test> <!-- AllureTest -->
+  </suite> <!-- Mysuite -->
 </testng-results>
