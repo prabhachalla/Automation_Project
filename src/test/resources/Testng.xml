@@ -1,10 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test">
-    <test name="Test">
+<suite name="Mysuite" parallel="classes" thread-count="3">
+    <test name="AllureTest">
         <classes>
-            <class name="TestNG.SampleProgram"/>
+            <class name="TestNG.DiathriveSetup"/>
         </classes>
     </test>
-
-   
 </suite>

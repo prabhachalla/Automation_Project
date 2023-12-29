@@ -8,11 +8,38 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">29,752</td><td></td><td></td></tr>
+<tr><th colspan="8">Mysuite</th></tr>
+<tr><td><a href="#t0">AllureTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,432</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNG.ExampleTest</td><td><a href="#m0">testLoginAndLogout</a></td><td rowspan="1">1701162941577</td><td rowspan="1">21059</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Mysuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AllureTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestNG.DiathriveSetup</td><td><a href="#m0">checkManualInputfield</a></td><td rowspan="1">1702566382269</td><td rowspan="1">16811</td></tr><tr><th colspan="4">AllureTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestNG.DiathriveSetup</td><td><a href="#m1">enter_userDetails</a></td><td rowspan="1">1702566369544</td><td rowspan="1">7710</td></tr><tr class="passedeven"><td><a href="#m2">navigate_to_homepage_click_on_getstarted</a></td><td rowspan="1">1702566364169</td><td rowspan="1">263</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestNG.ExampleTest#testLoginAndLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AllureTest</h2><h3 id="m0">TestNG.DiathriveSetup#checkManualInputfield</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div tabindex=&quot;0&quot; class=&quot;css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1xktl5x r-1867qdf r-13awgt0 r-1ow6zhx r-18u37iz r-1awozwy r-1777fci&quot; data-testid=&quot;AddGlucoseLevel-Button-Save&quot; style=&quot;margin-top: 0px; transition-duration: 0s;&quot;&gt;...&lt;/div&gt; is not clickable at point (1413, 649). Other element would receive the click: &lt;span class=&quot;helpButtonLabel&quot; id=&quot;helpButtonSpan&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=120.0.6099.71)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7daf04f736ab235c37da22c8c09c21d, clickElement {id=E90C553847D118B14B3DF2B8EA4C7C51_element_138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55511/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e7daf04f736ab235c37da22c8c09c21d)] -&gt; xpath: //div[@class=&apos;css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1xktl5x r-1867qdf r-13awgt0 r-1ow6zhx r-18u37iz r-1awozwy r-1777fci&apos;]]
+Session ID: e7daf04f736ab235c37da22c8c09c21d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at diathrive.Homepagecheck.CheckManualInput(Homepagecheck.java:43)
+	at TestNG.DiathriveSetup.checkManualInputfield(DiathriveSetup.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestNG.DiathriveSetup#enter_userDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestNG.DiathriveSetup#navigate_to_homepage_click_on_getstarted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

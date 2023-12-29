@@ -62,6 +62,6 @@ public class EmailUtility {
 
     public static void main(String[] args) {
         // Example usage
-        sendEmail("dinakarthanniru17@gmail.com", "TestNG Report", "Please find the attached TestNG report.", "D:\\Selenium_Automation\\Automation_Project\\test-output\\emailable-report.html");
+        sendEmail("selenium-test-automation@googlegroups.com", "TestNG Report", "Please find the attached TestNG report.", "D:\\Selenium_Automation\\Automation_Project\\test-output\\emailable-report.html");
     }
 }

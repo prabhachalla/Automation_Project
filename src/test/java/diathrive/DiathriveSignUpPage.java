@@ -27,9 +27,4 @@ public class DiathriveSignUpPage {
 	public void clickOncontinue(String arg1) {
 		driver.findElement(Continue).click();
 		}
-
-
-	
-	
-
 }
